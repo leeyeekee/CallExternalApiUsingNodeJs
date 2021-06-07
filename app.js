@@ -20,7 +20,7 @@ http.createServer((req, res) => {
         }
         else {
                 // res.write(targetRestURL);
-                res.write('<a href={{targetRestURL}}>Get List of Students </a>');
+                res.write('<a href=request>Get List of Students </a>');
                 res.end();
         }
         // res.end();
