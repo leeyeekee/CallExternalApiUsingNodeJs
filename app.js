@@ -5,8 +5,8 @@ const http = require('http')
 var targetRestURL = process.env.TARGET
 
 http.createServer((req, res) => {
-        res.write('Welcome to sample nodejs frontend');
-        res.write('Type append request or node to the url to retrieve a list of student from the backend');
+        res.write('<h>Welcome to sample nodejs frontend</h>');
+        res.write('<h>Type append request or node to the url to retrieve a list of student from the backend</h>');
         
         if(req.url === "/request"){
             apiCallFromRequest.callApi(function(response){
