@@ -1,5 +1,5 @@
 
-const https = require('https');
+const https = require('http');
  
 _EXTERNAL_URL = 'http://studentportal-sample.2886795281-80-jago05.environments.katacoda.com/students';
 
