@@ -19,8 +19,7 @@ http.createServer((req, res) => {
             });
         }
         else {
-        res.write('<h>Welcome to sample nodejs frontend</h>');
-        res.write('<h>Type append request or node to the url to retrieve a list of student from the backend</h>');
+        res.write('Welcome to sample nodejs frontend, append request or node to the url to retrieve a list of student from the backend');
         res.end();
         }
         // res.end();
