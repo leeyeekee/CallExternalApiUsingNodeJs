@@ -20,7 +20,7 @@ http.createServer((req, res) => {
         
         app.get('/', function(req, res){
                 res.render('/index.html');
-        };
+        }
         // res.end();
 }).listen(8080);
 
