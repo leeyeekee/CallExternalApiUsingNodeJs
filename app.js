@@ -2,6 +2,7 @@ const apiCallFromRequest = require('./Request')
 const apiCallFromNode = require('./NodeJsCall')
 
 const http = require('http')
+var targetRestURL = process.env.TARGET
 
 http.createServer((req, res) => {
         if(req.url === "/request"){
@@ -18,7 +19,7 @@ http.createServer((req, res) => {
             });
         }
         else {
-                res.write('<a href="http://studentportal/students">Get List of Students </a>');
+                res.write('<a href="http://"+targetRestURL+"/students">Get List of Students </a>');
                 res.end();
         }
         // res.end();
