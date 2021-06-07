@@ -17,7 +17,10 @@ http.createServer((req, res) => {
                 res.end();
             });
         };
-        response.end('Goto /request to retrieve list of students\n');
+        else {
+                res.write('Hello World');
+                res.end();
+        }
         // res.end();
 }).listen(8080);
 
