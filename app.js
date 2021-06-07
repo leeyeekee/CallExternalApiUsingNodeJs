@@ -19,8 +19,8 @@ http.createServer((req, res) => {
         };
         
         app.get('/', function(req, res){
-                res.sendFile(__dirname + '/index.html');
-        });
+                res.render('/index.html');
+        };
         // res.end();
 }).listen(8080);
 
