@@ -1,7 +1,7 @@
 
 const https = require('https');
  
-_EXTERNAL_URL = 'http://studentportal-sample.2886795276-80-jago05.environments.katacoda.com/students';
+_EXTERNAL_URL = 'http://studentportal-sample.2886795281-80-jago05.environments.katacoda.com/students';
 
 
 const callExternalApiUsingHttp = (callback) => {
