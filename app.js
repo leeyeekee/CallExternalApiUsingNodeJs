@@ -16,7 +16,7 @@ http.createServer((req, res) => {
                 res.write(response);
                 res.end();
             });
-        };
+        }
         else {
                 res.write('Hello World');
                 res.end();
