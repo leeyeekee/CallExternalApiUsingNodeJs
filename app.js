@@ -19,7 +19,8 @@ http.createServer((req, res) => {
             });
         }
         else {
-                res.write('<a href="http://"+targetRestURL+"/students">Get List of Students </a>');
+                res.write(targetRestURL);
+                res.write('<a href=targetRestURL>Get List of Students </a>');
                 res.end();
         }
         // res.end();
