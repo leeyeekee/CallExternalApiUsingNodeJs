@@ -18,7 +18,7 @@ http.createServer((req, res) => {
             });
         }
         else {
-                res.write('<a href="/request">Get List of Students </a>');
+                res.write('<a href="http://studentportal-sample.2886795281-80-jago05.environments.katacoda.com/students">Get List of Students </a>');
                 res.end();
         }
         // res.end();
