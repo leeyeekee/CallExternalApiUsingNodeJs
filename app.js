@@ -16,8 +16,11 @@ http.createServer((req, res) => {
                 res.write(response);
                 res.end();
             });
-        }
+        };
         
+        app.get('/', function(req, res){
+                res.sendFile(__dirname + '/index.html');
+        });
         // res.end();
 }).listen(8080);
 
