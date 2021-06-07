@@ -5,6 +5,7 @@ const http = require('http')
 var targetRestURL = process.env.TARGET
 
 http.createServer((req, res) => {
+        
         if(req.url === "/request"){
             apiCallFromRequest.callApi(function(response){
                 //console.log(JSON.stringify(response));
@@ -17,11 +18,6 @@ http.createServer((req, res) => {
                 res.write(response);
                 res.end();
             });
-        }
-        else {
-                // res.write(targetRestURL);
-                res.write('<a href=request>Get List of Students </a>');
-                res.end();
         }
         // res.end();
 }).listen(8080);
