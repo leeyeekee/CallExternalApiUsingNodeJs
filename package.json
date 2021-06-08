@@ -15,11 +15,17 @@
     "singh",
     "node",
     "web",
-    "api"
+    "api",
+    "json2html",
+    "templating",
+    "html",
+    "templates",
+    "json"
   ],
   "author": "Martand Singh (sniffer)",
   "license": "MIT",
   "dependencies": {
-    "request": "^2.87.0"
+    "request": "^2.87.0",
+    "mocha": "latest"
   }
 }
