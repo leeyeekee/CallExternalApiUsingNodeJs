@@ -26,6 +26,6 @@
   "license": "MIT",
   "dependencies": {
     "request": "^2.87.0",
-    "mocha": "latest"
+    "node-json2html": "^2.1.0"
   }
 }
