@@ -1,6 +1,6 @@
 const apiCallFromRequest = require('./Request')
 const apiCallFromNode = require('./NodeJsCall')
-var json2html = require('json2html')
+const json2html = require('node-json2html')
 
 const http = require('http')
 var targetRestURL = process.env.TARGET
@@ -11,7 +11,10 @@ http.createServer((req, res) => {
                 //console.log(JSON.stringify(response));
                 // res.write(JSON.stringify(response));
                 res.writeHead(200, {'Content-Type': 'text/html'});
-                res.end(json2html.render(myJson));
+                res.end(json2html.render(response,{"<>": "li", "html":[
+    	{"<>": "span", "text": "${id} ${name} ${address} "}
+      ]})
+                       );
                 //res.end();
             });
         }
