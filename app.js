@@ -12,7 +12,7 @@ http.createServer((req, res) => {
                 // res.write(JSON.stringify(response));
                 res.writeHead(200, {'Content-Type': 'text/html'});
                 res.end(json2html.render(response,{"<>": "li", "html":[
-    	{"<>": "span", "text": "${id} ${name} ${address} "}
+    	{"<>": "span", "text": "${id} - Name : ${name} , Address : ${address} "}
       ]})
                        );
                 //res.end();
